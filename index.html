@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>2Where</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <nav class="navbar">
+            <div class="linkContainer">
+                <a class="link" href="./index.html">Home</a>
+                <a class="link" href="./about.html">About Us</a>
+                <a class="link" href="./contact.html">Contact Us</a>
+            </div>
+            <div id="search-container" class="searchContainer">
+                <input type="text" name="search" id="travelSearch" />
+                <button id="searchButton">Search</button>
+                <button id="clearButton">Clear</button>
+            </div>
+        </nav>
+        <div class="homeContent">
+            <div class="titleContainer">
+                <h1>2Where: Your Ultimate Guide to Finding the Perfect Travel Destinations</h1>
+            </div>
+            <div class=descriptionContainer>
+                <h3>Explore tailored travel recommendations, hidden gems, and expert tips to plan your next
+                    unforgettable journey with 2Where!</h3>
+            </div>
+
+            <button class="fetchButton" id="fetchDataButton">Look For A Travel</button>
+        </div>
+        <div id="recommendationContent"></div>
+    </div>
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>

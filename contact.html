@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>2Where - Contact Us</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <nav class="navbar">
+            <div class="linkContainer">
+                <a class="link" href="./index.html">Home</a>
+                <a class="link" href="./about.html">About Us</a>
+                <a class="link" href="./contact.html">Contact Us</a>
+            </div>
+            <div id="search-container" class="searchContainer">
+                <input type="text" name="search" id="travelSearch" />
+                <button id="searchButton">Search</button>
+                <button id="clearButton">Clear</button>
+            </div>
+        </nav>
+        <div class="contactUsContent">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <form novalidate class="formContainer" id="contactForm" method="get" action="./success.html">
+                <h4 class="formLabel">Name</h4>
+                <input type="text" class="formInput" id="name" name="name" placeholder="Please type your name here" />
+                <h4 class="formLabel">E-mail Address</h4>
+                <input type="email" class="formInput" id="email" name="email"
+                    placeholder="Please type your e-mail address here" />
+                <h4 class="formLabel">Message</h4>
+                <textarea class="messageTextArea" id="message" name="message" maxlength="255"
+                    placeholder="Type your message here"></textarea>
+                <button type="submit" class="submitButton" id="formSubmitButton">Submit</button>
+            </form>
+        </div>
+        <div id="recommendationContent"></div>
+    </div>
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>

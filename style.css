@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    font: inherit;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images8.alphacoders.com/591/591850.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        background-color: #0496b9;
+    }
+
+    .linkContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link {
+        padding: 12px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: white;
+            color: #0496b9;
+        }
+    }
+
+    .searchContainer {
+        padding: 8px;
+        background-color: white;
+        border: solid 1px #d0cbcb;
+        border-radius: 8px;
+
+        input[name="search"] {
+            outline: none;
+            font-size: 12px;
+            height: 30px;
+        }
+
+        button {
+            background-color: #0496b9;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.titleContainer,
+.descriptionContainer {
+    width: 550px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: white;
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.descriptionContainer {
+    margin-top: 32px;
+}
+
+.homeContent,
+.aboutUsContent,
+.contactUsContent {
+    padding: 32px 16px;
+}
+
+.homeContent {
+    .fetchButton {
+        padding: 12px 24px;
+        background-color: #0496b9;
+        color: white;
+        margin-top: 32px;
+        border-radius: 8px;
+        font-size: 24px;
+    }
+}
+
+.aboutUsContent {
+    h1 {
+        color: white;
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    .descriptionContainer {
+        width: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        h6 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .memberContainer {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .title {
+            width: 25%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            justify-content: space-between;
+            width: 25%;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            color: white;
+
+
+            .name {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .job {
+                margin-top: 8px;
+                font-size: 12px;
+                text-align: justify;
+            }
+
+            .role {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 12px 8px;
+                background-color: #348fb5;
+                border: solid 1px white;
+                border-radius: 12px;
+                margin-top: 8px;
+                text-align: center;
+            }
+        }
+    }
+
+
+}
+
+.contactUsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        width: 50%;
+        text-align: center;
+        font-size: 48px;
+        color: white;
+    }
+
+    .formContainer {
+        width: 50%;
+        padding: 24px;
+        background-color: white;
+        border-radius: 12px;
+
+        .formLabel {
+            margin-top: 16px;
+            font-size: 18px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-top: 16px;
+            border: solid 1px #d0cbcb;
+            border-radius: 8px;
+            padding: 8px 16px;
+        }
+
+        .submitButton {
+            width: 100%;
+            margin-top: 8px;
+            padding: 8px 16px;
+            background-color: #0496b9;
+            color: white;
+            border-radius: 8px;
+
+        }
+    }
+}
+
+.recommendationContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 32px;
+    text-align: center;
+
+    .not-found {
+        font-size: 18px;
+        margin-top: 16px;
+        color: white;
+    }
+
+    .title {
+        font-size: 48px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .recommendation {
+        padding: 16px;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .image {
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333333;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #414141;
+        }
+    }
+}
