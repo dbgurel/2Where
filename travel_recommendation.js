@@ -27,16 +27,17 @@ searchButton.addEventListener('click', () => {
             data.temples.forEach( temple => {
                 recommendations.push(temple);
             })
-        } else if (searchInput.value.toLowerCase().includes('country')) {
-            data.countries.forEach( country => {
-                country?.cities.forEach( city => {
-                    recommendations.push(city);
-                })
-            })
         } else {
-            const notFound = "<p class='not-found'> No Data Is Found.</p>";
+            const countries = data.countries.find( country => country.name.toLowerCase() === searchInput.value.toLowerCase());
+            if(countries) {
 
-            recommendationDiv.innerHTML += notFound;
+                countries.cities.forEach(country => {
+                        recommendations.push(country)
+                    })
+            } else {
+                const notFound = "<p class='not-found'> No Data Is Found.</p>";
+                recommendationDiv.innerHTML += notFound;
+            }
         }
 
         recommendations.forEach((a)=> {
